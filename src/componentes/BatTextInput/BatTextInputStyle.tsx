@@ -1,7 +1,10 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  container: {},
+  container: {
+    width:'100%',
+    marginBottom: 10
+  },
   inputer: {
     backgroundColor: '#E5BF3C',
     width: '100%',

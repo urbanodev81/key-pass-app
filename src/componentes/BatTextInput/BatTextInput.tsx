@@ -5,8 +5,8 @@ import { styles } from './BatTextInputStyle';
 
 export function BatTextInput() {
   return (
-    <View >
-        <TextInput style={styles.inputer} />
+    <View style={styles.container}>
+        <TextInput style={styles.inputer}  placeholder='Digite aqui' />
     </View>
   );
 }

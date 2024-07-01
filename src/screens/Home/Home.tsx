@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import styles from './Style';
 import { BatLogo } from '../../componentes/BatLogo/BatLogo';
 import { BatTextInput } from '../../componentes/BatTextInput/BatTextInput';
+import { BatButton } from '../../componentes/BatButton/BatButton';
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
             </View>
             <View style={styles.inputContainer}>
                 <BatTextInput />
+                <BatButton />
             </View>
             <Text style={styles.texto}>Open up App.tsx to start working on your app!</Text>
             <StatusBar style="light" />
