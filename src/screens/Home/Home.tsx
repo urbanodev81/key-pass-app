@@ -14,7 +14,6 @@ export default function Home() {
                 <BatLogo />
             </View>
             <View style={styles.inputContainer}>
-                <BatTextInput />
                 <BatButton />
             </View>
             <Text style={styles.texto}>Open up App.tsx to start working on your app!</Text>
