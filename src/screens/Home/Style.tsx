@@ -5,6 +5,8 @@ const styles = StyleSheet.create({
       backgroundColor: '#333333',
       alignItems: 'center',
       justifyContent: 'center',
+      padding: 50,
+      
     },
     logoContainer:{
       flexDirection: 'column',
@@ -14,7 +16,8 @@ const styles = StyleSheet.create({
       alignSelf:'center',
       marginBottom: 60,
       padding: 20,
-      backgroundColor: '#4D4D4D'
+      backgroundColor: '#4D4D4D',
+
 
   },
   container: {
