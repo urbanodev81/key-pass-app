@@ -16,7 +16,7 @@ export default function Home() {
             <View style={styles.inputContainer}>
                 <BatButton />
             </View>
-            <Text style={styles.texto}>Open up App.tsx to start working on your app!</Text>
+            <Text style={styles.texto}></Text>
             <StatusBar style="light" />
         </View> 
     )
