@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#333333',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: 50,
+      padding: 30,
       
     },
     logoContainer:{
@@ -14,10 +14,8 @@ const styles = StyleSheet.create({
       borderWidth: 2,
       justifyContent: 'center',
       alignSelf:'center',
-      marginBottom: 60,
+      marginBottom: 30,
       padding: 20,
-      backgroundColor: '#4D4D4D',
-
 
   },
   container: {
@@ -26,7 +24,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center'
   },
   inputContainer: {
-    width: '80%',
+    width: '100%',
     flexDirection: 'column',
     alignItems: 'center'
   },

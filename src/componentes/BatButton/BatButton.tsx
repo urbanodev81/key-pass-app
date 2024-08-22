@@ -46,23 +46,23 @@ export function BatButton() {
     <View style={styles.container}>
       <BatTextInput pass={pass}  />
 
-      <Text style={styles.textTituloInput}>Choose type:</Text>
+      <Text style={styles.textTituloInput}>Escolha o tipo:</Text>
       <RadioButton.Group onValueChange={value => setType(value as 'text' | 'number' | 'mixed')} value={type}>
         <View style={styles.radioButtonContainer}>
-          <Text style={styles.textRadioOption}>Text</Text>
+          <Text style={styles.textRadioOption}>Texto</Text>
           <RadioButton value="text" />
         </View>
         <View style={styles.radioButtonContainer}>
-          <Text style={styles.textRadioOption}>Number</Text>
+          <Text style={styles.textRadioOption}>Número</Text>
           <RadioButton value="number" />
         </View>
         <View style={styles.radioButtonContainer}>
-          <Text style={styles.textRadioOption}>Mixed</Text>
+          <Text style={styles.textRadioOption}>Misturar</Text>
           <RadioButton value="mixed" />
         </View>
       </RadioButton.Group>
 
-      <Text style={styles.textTituloInput}>Enter length (min 6):</Text>
+      <Text style={styles.textTituloInput}>Tamanho da senha (min 6):</Text>
       <TextInput
         style={styles.inputTextNum}
         keyboardType="numeric"
@@ -77,7 +77,7 @@ export function BatButton() {
       </Pressable>
       <Pressable style={styles.buttonCopy}
           onPress={handleCopuButtoon}>
-        <Text  style={styles.textCopy}>COPY</Text>
+        <Text  style={styles.textCopy}>COPIAR</Text>
       </Pressable>
     </View>
   );

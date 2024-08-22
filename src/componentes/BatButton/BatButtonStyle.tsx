@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
 
   },
   inputTextNum: {
-    color: 'white',
+    color: 'black',
     height: 40,
     borderColor: 'gray',
     borderWidth: 1,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { ScrollView, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import styles from './Style';
 import { BatLogo } from '../../componentes/BatLogo/BatLogo';
@@ -9,16 +9,18 @@ import { BatButton } from '../../componentes/BatButton/BatButton';
 
 export default function Home() {
     return (
-        <View style={styles.appContainer}>
-            <View style={styles.logoContainer}>
-                <BatLogo />
-            </View>
-            <View style={styles.inputContainer}>
-                <BatButton />
-            </View>
-            <Text style={styles.texto}></Text>
-            <StatusBar style="light" />
-        </View> 
+        <ScrollView>
+            <View style={styles.appContainer}>
+                <View style={styles.logoContainer}>
+                    <BatLogo />
+                </View>
+                <View style={styles.inputContainer}>
+                    <BatButton />
+                </View>
+                <Text style={styles.texto}></Text>
+                <StatusBar style="light" />
+            </View> 
+        </ScrollView>
     )
 }
 
