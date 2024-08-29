@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "bat-pass-app",
-    "slug": "bat-pass-app",
+    "name": "key-pass-app",
+    "slug": "key-pass-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +19,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.ricardourbano.batpassapp"
+      "package": "com.ricardourbano.keypassapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"

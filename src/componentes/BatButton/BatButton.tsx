@@ -16,8 +16,19 @@ export function BatButton() {
 
   function handleGenerateButton () {
     const numLength = parseInt(length);
-    if (isNaN(numLength) || numLength < 6 || numLength > 12) {
-      Alert.alert('Invalid Length', 'Length must be between 6 and 12');
+    // if (isNaN(numLength) ){
+    //   Alert.alert('Tamanho vazio', 'Escolha o tamanho da senha, de 6 a 12 caracteres');
+    //   return;
+    // } else if(numLength < 6 || numLength > 12) {
+    //   Alert.alert('Tamanho Invalido', 'Tamanho da senha deve ser de 6 e 12 caracteres');
+    //   return;
+    // }
+    if(isNaN(numLength)) {
+      setErrorMessage('Escolha o tamanho da senha, de 6 a 12 caracteres');
+      return;
+    
+    } else if(numLength <= 6 || numLength > 12) {
+      setErrorMessage('Tamanho da senha deve ser de 6 e 12 caracteres');
       return;
     }
     setErrorMessage('');
@@ -37,8 +48,11 @@ export function BatButton() {
     const num = parseInt(text);
     if (!isNaN(num) && num >= 6 && num <= 12) {
       setErrorMessage('');
-    } else {
-      setErrorMessage('Length must be between 6 and 12');
+    } else if (isNaN(num)) {
+      setErrorMessage('Escolha o tamanho da senha, de 6 a 12 caracteres');
+    
+    } else if(num <= 6 || num > 12) {
+      setErrorMessage('Tamanho da senha deve ser de 6 e 12 caracteres');
     }
   }
 
