@@ -16,26 +16,17 @@ export function BatButton() {
 
   function handleGenerateButton () {
     const numLength = parseInt(length);
-    // if (isNaN(numLength) ){
-    //   Alert.alert('Tamanho vazio', 'Escolha o tamanho da senha, de 6 a 12 caracteres');
-    //   return;
-    // } else if(numLength < 6 || numLength > 12) {
-    //   Alert.alert('Tamanho Invalido', 'Tamanho da senha deve ser de 6 e 12 caracteres');
-    //   return;
-    // }
     if(isNaN(numLength)) {
       setErrorMessage('Escolha o tamanho da senha, de 6 a 12 caracteres');
       return;
     
-    } else if(numLength <= 6 || numLength > 12) {
+    } else if(numLength < 6 || numLength > 12) {
       setErrorMessage('Tamanho da senha deve ser de 6 e 12 caracteres');
       return;
     }
     setErrorMessage('');
     let generateToken = generatePass(numLength, type);
     setPass(generateToken);
-
-    
   }
 
   function handleCopuButtoon(){
@@ -58,7 +49,6 @@ export function BatButton() {
 
   return (
     <View style={styles.container}>
-      <BatTextInput pass={pass}  />
 
       <Text style={styles.textTituloInput}>Escolha o tipo:</Text>
       <RadioButton.Group onValueChange={value => setType(value as 'text' | 'number' | 'mixed')} value={type}>
@@ -76,14 +66,16 @@ export function BatButton() {
         </View>
       </RadioButton.Group>
 
-      <Text style={styles.textTituloInput}>Tamanho da senha (min 6):</Text>
+      <Text style={styles.textTituloInput}>Tamanho da senha (min 6 - max 12):</Text>
       <TextInput
         style={styles.inputTextNum}
         keyboardType="numeric"
         value={length.toString()}
          onChangeText={handleLengthChange}
+         placeholder='Digite o tamanho da senha que precisa.  (min 6 - max 12)'
       />
       {errorMessage ? <Text style={styles.errorText}>{errorMessage}</Text> : null}
+      <BatTextInput pass={pass}  />
 
       <Pressable style={styles.buttonGerar}
           onPress={handleGenerateButton}>

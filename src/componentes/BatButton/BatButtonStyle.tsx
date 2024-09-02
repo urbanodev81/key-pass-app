@@ -70,7 +70,7 @@ export const styles = StyleSheet.create({
     color: '#333',
     marginBottom: 5,
     width: '100%',
-    
+    fontWeight: 'bold',
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 5,

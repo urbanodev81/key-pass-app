@@ -15,5 +15,17 @@ export const styles = StyleSheet.create({
     borderRadius: 5, 
     padding:6,
     textAlign: 'center'
-  }
+  },
+  textTituloInput: {
+    fontSize: 16,
+    color: '#333',
+    marginBottom: 0,
+    marginTop: 4,
+    width: '100%',
+    paddingVertical: 12,
+    paddingHorizontal: 8,
+    borderRadius: 5,
+    fontWeight: 'bold'
+
+  },
 });
