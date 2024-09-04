@@ -75,12 +75,13 @@ export function BatButton() {
          placeholder='Digite o tamanho da senha que precisa.  (min 6 - max 12)'
       />
       {errorMessage ? <Text style={styles.errorText}>{errorMessage}</Text> : null}
-      <BatTextInput pass={pass}  />
+    
 
       <Pressable style={styles.buttonGerar}
           onPress={handleGenerateButton}>
         <Text  style={styles.textGerar}>Gerar</Text>
       </Pressable>
+      <BatTextInput pass={pass}  />
       <Pressable style={styles.buttonCopy}
           onPress={handleCopuButtoon}>
         <Text  style={styles.textCopy}>COPIAR</Text>
