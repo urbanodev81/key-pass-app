@@ -2,7 +2,7 @@
   "expo": {
     "name": "key-pass-app",
     "slug": "key-pass-app",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,7 +15,7 @@
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 2, // incremente este número
+      "versionCode": 3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -25,11 +25,16 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "extra": {
       "eas": {
         "projectId": "0545b3b4-66eb-48b8-a9ee-86126e1aa54c"
       }
     },
-    "owner": "ricardourbano"
+    "updates": {
+      "url": "https://u.expo.dev/0545b3b4-66eb-48b8-a9ee-86126e1aa54c"
+    }
   }
 }
